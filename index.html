@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Programs</title>
+</head>
+<body>
+    <!-- 1. Print Number -->
+    <h3>Print Number</h3>
+    <input type="number" id="number1">
+    <button onclick="printNumber()">Print Number</button>
+    <p id="output1"></p>
+
+    <!-- 2. Divisible by 3 and 4 -->
+    <h3>Divisible by 3 and 4</h3>
+    <input type="number" id="number2">
+    <button onclick="checkDivisibility()">Check Divisibility</button>
+    <p id="output2"></p>
+
+    <!-- 3. Maximum of Two Numbers -->
+    <h3>Maximum of Two Numbers</h3>
+    <input type="number" id="number3a">
+    <input type="number" id="number3b">
+    <button onclick="findMax()">Find Max</button>
+    <p id="output3"></p>
+
+    <!-- 4. Positive or Negative -->
+    <h3>Positive or Negative</h3>
+    <input type="number" id="number4">
+    <button onclick="checkSign()">Check Sign</button>
+    <p id="output4"></p>
+
+    <!-- 5. Maximum and Minimum of Three Numbers -->
+    <h3>Maximum and Minimum of Three Numbers</h3>
+    <input type="number" id="number5a">
+    <input type="number" id="number5b">
+    <input type="number" id="number5c">
+    <button onclick="findMaxMin()">Find Max and Min</button>
+    <p id="output5"></p>
+
+    <!-- 6. Even or Odd -->
+    <h3>Even or Odd</h3>
+    <input type="number" id="number6">
+    <button onclick="checkEvenOdd()">Check Even or Odd</button>
+    <p id="output6"></p>
+
+    <!-- 7. Vowel or Consonant -->
+    <h3>Vowel or Consonant</h3>
+    <input type="text" id="char1" maxlength="1">
+    <button onclick="checkVowel()">Check Vowel</button>
+    <p id="output7"></p>
+
+    <!-- 8. Print Numbers from 1 to N -->
+    <h3>Print Numbers from 1 to N</h3>
+    <input type="number" id="number8">
+    <button onclick="printNumbers()">Print Numbers</button>
+    <p id="output8"></p>
+
+    <!-- 9. Multiplication Table up to 12 -->
+    <h3>Multiplication Table up to 12</h3>
+    <input type="number" id="number9">
+    <button onclick="printMultiplicationTable()">Print Multiplication Table</button>
+    <p id="output9"></p>
+
+    <!-- 10. Print Even Numbers from 1 to N -->
+    <h3>Print Even Numbers from 1 to N</h3>
+    <input type="number" id="number10">
+    <button onclick="printEvenNumbers()">Print Even Numbers</button>
+    <p id="output10"></p>
+
+    <!-- 11. Calculate Power -->
+    <h3>Calculate Power</h3>
+    <input type="number" id="base">
+    <input type="number" id="exponent">
+    <button onclick="calculatePower()">Calculate Power</button>
+    <p id="output11"></p>
+
+    <!-- 12. Marks Calculation -->
+    <h3>Marks Calculation</h3>
+    <input type="number" id="subject1" placeholder="Subject 1">
+    <input type="number" id="subject2" placeholder="Subject 2">
+    <input type="number" id="subject3" placeholder="Subject 3">
+    <input type="number" id="subject4" placeholder="Subject 4">
+    <input type="number" id="subject5" placeholder="Subject 5">
+    <button onclick="calculateMarks()">Calculate</button>
+    <p id="output12"></p>
+
+    <!-- 13. Days in a Month -->
+    <h3>Days in a Month</h3>
+    <input type="number" id="month" placeholder="Enter month number (1-12)">
+    <button onclick="getDays()">Get Days</button>
+    <p id="output13"></p>
+
+    <!-- 14. Percentage and Grade -->
+    <h3>Percentage and Grade</h3>
+    <input type="number" id="physics" placeholder="Physics">
+    <input type="number" id="chemistry" placeholder="Chemistry">
+    <input type="number" id="biology" placeholder="Biology">
+    <input type="number" id="mathematics" placeholder="Mathematics">
+    <input type="number" id="computer" placeholder="Computer">
+    <button onclick="calculatePercentageGrade()">Calculate</button>
+    <p id="output14"></p>
+
+    <!-- 15. Switch Statements -->
+    <h3>Switch Statements</h3>
+    <h4>Days in a Month</h4>
+    <input type="number" id="switchMonth" placeholder="Enter month number (1-12)">
+    <button onclick="switchGetDays()">Get Days</button>
+    <p id="output15a"></p>
+
+    <h4>Vowel or Consonant</h4>
+    <input type="text" id="switchChar" maxlength="1">
+    <button onclick="switchCheckVowel()">Check Vowel</button>
+    <p id="output15b"></p>
+
+    <h4>Find Maximum Between Two Numbers</h4>
+    <input type="number" id="switchNumber1">
+    <input type="number" id="switchNumber2">
+    <button onclick="switchFindMax()">Find Max</button>
+    <p id="output15c"></p>
+
+    <h4>Even or Odd</h4>
+    <input type="number" id="switchEvenOdd">
+    <button onclick="switchCheckEvenOdd()">Check Even or Odd</button>
+    <p id="output15d"></p>
+
+    <h4>Positive, Negative, or Zero</h4>
+    <input type="number" id="switchSign">
+    <button onclick="switchCheckSign()">Check Sign</button>
+    <p id="output15e"></p>
+
+    <h4>Simple Calculator</h4>
+    <input type="number" id="calcNumber1" placeholder="Number 1">
+    <input type="number" id="calcNumber2" placeholder="Number 2">
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <button onclick="calculate()">Calculate</button>
+    <p id="output15f"></p>
+
+    <!-- 16. Print Numbers 1 to 10 -->
+    <h3>Print Numbers 1 to 10</h3>
+    <button onclick="printNumbers1to10()">Print Numbers</button>
+    <p id="output16"></p>
+
+    <!-- 17. Sum of First 10 Natural Numbers -->
+    <h3>Sum of First 10 Natural Numbers</h3>
+    <button onclick="calculateSum()">Calculate Sum</button>
+    <p id="output17"></p>
+
+    <!-- 18. Print Even Numbers Between 1 and 20 -->
+    <h3>Print Even Numbers Between 1 and 20</h3>
+    <button onclick="printEvenNumbers1to20()">Print Even Numbers</button>
+    <p id="output18"></p>
+
+    <!-- 19. Factorial of a Number -->
+    <h3>Factorial of a Number</h3>
+    <input type="number" id="factorialNumber">
+    <button onclick="calculateFactorial()">Calculate Factorial</button>
+    <p id="output19"></p>
+
+    <!-- 20. Reverse a String -->
+    <h3>Reverse a String</h3>
+    <input type="text" id="reverseStringInput">
+    <button onclick="reverseString()">Reverse String</button>
+    <p id="output20"></p>
+
+    <!-- 21. Print Elements of an Array -->
+    <h3>Print Elements of an Array</h3>
+    <input type="text" id="arrayInput" placeholder="Enter numbers separated by commas">
+    <button onclick="printArrayElements()">Print Elements</button>
+    <p id="output21"></p>
+
+    <!-- 22. Find Maximum in an Array -->
+    <h3>Find Maximum in an Array</h3>
+    <input type="text" id="maxArrayInput" placeholder="Enter numbers separated by commas">
+    <button onclick="findMaxInArray()">Find Maximum</button>
+    <p id="output22"></p>
+
+    <!-- 23. Print Multiplication Table of a Given Number -->
+    <h3>Print Multiplication Table</h3>
+    <input type="number" id="multiplicationNumber">
+    <button onclick="printMultiplicationTableTo10()">Print Multiplication Table</button>
+    <p id="output23"></p>
+
+    <!-- 24. Count Vowels in a String -->
+    <h3>Count Vowels in a String</h3>
+    <input type="text" id="countVowelsString">
+    <button onclick="countVowels()">Count Vowels</button>
+    <p id="output24"></p>
+
+    <!-- 25. Check Prime Number -->
+    <h3>Check Prime Number</h3>
+    <input type="number" id="primeNumber">
+    <button onclick="checkPrime()">Check Prime</button>
+    <p id="output25"></p>
+
+    <script src="js/Script.js"></script>
+</body>
+</html>
